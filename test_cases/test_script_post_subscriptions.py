@@ -3,11 +3,7 @@
 
 
 def test_script(http_client):
-    """
-    1.Send request to receive the list of instruments.
-    2.Check response status code is 200.
-    """
 
-    response = http_client.post_subscriptions(request_id='555', system_code='222')
+    response = http_client.post_subscriptions(request_id='555', system_code='222', instrument_id='AAPL_SPBXM', sec_name='AAPL', sec_type='equity', price_alert=0)
 
     assert response.status_code == 200

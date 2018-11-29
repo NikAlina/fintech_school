@@ -1,12 +1,11 @@
 #-*-coding: utf8 -*
 """Test to check Investment API"""
 
+def test_script_post(http_client):
 
-def test_script(http_client):
-    """
-    1.Send request to receive the list of instruments.
-    2.Check response status code is 200.
-    """
+    response = http_client.post_subscriptions(request_id='555', system_code='222')
+
+def test_script_del(http_client):
 
     response = http_client.del_subscriptions (request_id='555', system_code='222')
 
