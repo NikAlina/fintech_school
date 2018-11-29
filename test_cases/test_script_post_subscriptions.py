@@ -1,5 +1,5 @@
 #-*-coding: utf8 -*
-"""Test to check Investment API"""
+"""Test to creation subscription"""
 
 
 def test_script(http_client):
